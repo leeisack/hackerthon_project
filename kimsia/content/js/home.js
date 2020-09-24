@@ -15,6 +15,7 @@ var position_address1 = new Array();
 var x1 = new Array();
 var y1 = new Array();
 d3.csv("data/park.csv", function(error, data){
+    console.log(data)
     for(var i = 0; i < data.length; i++){
         position_title1.push(data[i].name)
         position_address1.push(data[i].address)

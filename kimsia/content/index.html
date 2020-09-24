@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="EUC-KR">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="d3/d3.v3.min.js"></script>
     <title>안 만날 수 없는 사이</title>
 </head>
 <body>
@@ -14,12 +15,9 @@
                 <div class = "header">
                 </div>
                 <div class = "left_content">
-                    <video id="localVideo" autoplay playsinline></video>
-                    <video id="remoteVideo" autoplay playsinline></video>
-                    <div class = "video_btn">
-                        <button id="startButton">Start</button>
-                        <button id="callButton">Call</button>
-                        <button id="hangupButton">Hang Up</button>
+                    <div id="videos">
+                        <video id="localVideo" autoplay muted playsinline></video>
+                        <video id="remoteVideo" autoplay playsinline></video>
                     </div>
                 </div>
             </div>
@@ -44,9 +42,9 @@
         <button class="tab" onclick="openTab(event, 'tab4')">Car theater</button>
         <button class="tab" onclick="openTab(event, 'tab5')">Drive-thru</button>
     </div>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script type= "text/javascript" src = "http://d3js.org/d3.v3.min.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b026b3a432560320b3539c96f47b6ad4&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	ae607da81e936efd7cd07a48a54020f5&libraries=services"></script>
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
 </body>
